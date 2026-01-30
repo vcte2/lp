@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Criação de landing pages profissionais focadas em conversão, design moderno e contato direto via WhatsApp. Veja meu portfólio.">
+    <title>José Victor | WebDeveloper | Criação de Landing Pages Profissionais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <!-- LOGO / NOME -->
+        <div class="logo">
+          José Victor<span>.</span>
+        </div>
+    
+        <!-- MENU -->
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home">Pagina Inicial</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#contato">Contato</a>
+          <a href="#contato" class="btn nav-btn">WhatsApp</a>
+        </nav>
+    
+        <!-- BOTÃO MOBILE -->
+        <div class="menu-toggle" id="menuToggle">
+          ☰
+        </div>
+      </div>
+    </header>
+    
+    <!-- Main Container -->
+     <section class="hero" id="home">
+        <div class="hero-text">
+            <span class="tag">DESENVOLEDOR WEB</span>
+
+            <h1>
+                Criação de <br>
+                <strong>Landing Pages</strong><br>
+                Profisionais
+            </h1>
+
+            <p>
+                Ajudo profissionais e pequenos negócios a terem presença
+                online profissional e gerar contatos pelo WhatsApp.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contato" class="btn">Fale Comigo</a>
+                <a href="#portfolio" class="btn">Ver Portfólio</a>
+            </div>
+
+        </div>
+
+            <div class="hero-photo">
+                <span class="shape shape-1"></span>
+                <span class="shape shape-2"></span>
+                <img src="assets/images/1.jpg" alt="Victor, desenvolvedor web especializado em landing pages" loading="lazy" width="380" height="520">
+                
+            </div>
+     </section>
+     
+     <!-- Sobre mim -->
+        <section class="sobre" id="sobre">
+          <div class="sobre-wrapper">
+        
+            <!-- TEXTO -->
+            <div class="sobre-texto">
+              <span class="tag">SOBRE MIM</span>
+            
+              <h2>Sites focados em resultado, não só em visual</h2>
+            
+              <p>
+                Sou desenvolvedor web especializado na criação de landing pages
+                profissionais para pequenos negócios e profissionais liberais.
+                Meu foco é transformar visitas em contatos reais,
+                usando design estratégico, performance e integração com WhatsApp.
+              </p>
+            
+              
+            </div>
+        
+            <!-- CARDS -->
+           <div class="sobre-cards">
+              <div class="card">
+                <div class="icon">
+                  💻
+                </div>
+                <h3>Landing Pages</h3>
+                <p>Sites focados em conversão e geração de contatos.</p>
+              </div>
+          
+              <div class="card">
+                <div class="icon">
+                  📱
+                </div>
+                <h3>Sites Responsivos</h3>
+                <p>Experiência perfeita no celular, tablet e desktop.</p>
+              </div>
+          
+              <div class="card">
+                <div class="icon">
+                  💬
+                </div>
+                <h3>Integração WhatsApp</h3>
+                <p>Contato direto e rápido com seus clientes.</p>
+              </div>
+          
+              <div class="card">
+                <div class="icon">
+                  ⚙️
+                </div>
+                <h3>Manutenção</h3>
+                <p>Atualizações, ajustes e suporte contínuo.</p>
+              </div>
+            </div>
+
+        
+          </div>
+        </section>
+
+
+        <section class="portfolio" id="portfolio">
+          <span class="tag">PORTFÓLIO</span>
+          <h2>Projetos por segmento</h2>
+                
+          <p class="portfolio-desc">
+            Exemplos de landing pages desenvolvidas para diferentes tipos de negócio,
+            sempre com foco em conversão e clareza.
+          </p>
+        
+          <div class="portfolio-grid">
+          
+            <a href="portifolio/advogado/index.html" class="portfolio-card" target="_blank" >
+              <h3>Advogado</h3>
+              <p>
+                Landing page focada em autoridade, credibilidade
+                e contato direto via WhatsApp.
+              </p>
+              <span>Ver projeto →</span>
+            </a>
+          
+            <a href="portifolio/corretor/index.html" class="portfolio-card" target="_blank">
+              <h3>Corretor de Imóveis</h3>
+              <p>
+                Página otimizada para captação de leads
+                e apresentação de imóveis.
+              </p>
+              <span>Ver projeto →</span>
+            </a>
+          
+            <a href="portifolio/provedor/index.html" class="portfolio-card" target="_blank">
+              <h3>Provedor de Internet </h3>
+              <p>
+                Landing Page simples de provedor de internet, com Planos e contato via WhatsApp. Para captação de leads.
+              </p>
+              <span>Ver projeto →</span>
+            </a>
+          
+          </div>
+        </section>
+        
+        
+
+        <!-- Contact Section -->
+    <section class="contato" id="contato">
+      <h2>Vamos conversar?</h2>
+      <p>
+        Me conte brevemente sobre seu projeto e eu retorno pelo WhatsApp.
+      </p>    
+
+      <form onsubmit="enviarWhatsApp(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <textarea id="mensagem" placeholder="Descreva seu projeto" required></textarea>
+        <button type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>
+          © <span id="year"></span> José Victor de Paulo.  
+          Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+      
+    <script src="js/script.js"></script>
+</body>
+</html>

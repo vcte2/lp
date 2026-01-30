@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Advocacia Especializada | Atendimento Jurídico Premium</title>
+  <meta name="description" content="Advocacia especializada com atuação estratégica, ética e atendimento premium. Fale diretamente com um advogado.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <div class="logo">Advocacia<span>VCTE</span></div>
+
+    <nav class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#areas">Atuação</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="nav-cta">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="tag">ESCRITÓRIO DE ADVOCACIA</span>
+
+      <h1>
+        Excelência jurídica<br>
+        com visão estratégica<br>
+        e atendimento premium
+      </h1>
+
+      <p>
+        Atuamos com foco em soluções jurídicas eficazes,
+        linguagem clara e compromisso absoluto com nossos clientes.
+      </p>
+
+      <a href="#contato" class="btn-primary">Falar com Advogado</a>
+    </div>
+
+    <div class="hero-visual">
+      <div class="visual-shape"></div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="container">
+    <span class="section-tag">ÁREAS DE ATUAÇÃO</span>
+    <h2>Soluções jurídicas sob medida</h2>
+
+    <div class="areas-grid">
+      <div class="area-card">
+        <h3>Direito Civil</h3>
+        <p>Contratos, indenizações e responsabilidade civil.</p>
+      </div>
+
+      <div class="area-card">
+        <h3>Direito Trabalhista</h3>
+        <p>Assessoria preventiva e atuação estratégica.</p>
+      </div>
+
+      <div class="area-card">
+        <h3>Direito Previdenciário</h3>
+        <p>Planejamento e benefícios previdenciários.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-text">
+      <span class="section-tag">NOSSA ATUAÇÃO</span>
+      <h2>Atendimento humano, técnico e transparente</h2>
+
+      <p>
+        Nosso compromisso é oferecer orientação jurídica clara,
+        estratégica e responsável, sempre alinhada aos objetivos
+        e necessidades de cada cliente.
+      </p>
+    </div>
+
+    <div class="sobre-cards">
+      <div class="sobre-card">✔ Atendimento personalizado</div>
+      <div class="sobre-card">✔ Linguagem acessível</div>
+      <div class="sobre-card">✔ Ética e sigilo absoluto</div>
+      <div class="sobre-card">✔ Agilidade e compromisso</div>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="container contato-box">
+    <span class="section-tag light">CONTATO</span>
+    <h2>Precisa de orientação jurídica?</h2>
+    <p>Fale agora diretamente com um advogado pelo WhatsApp.</p>
+
+    <form onsubmit="enviarWhatsApp(event)">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <textarea id="mensagem" placeholder="Descreva brevemente seu caso" required></textarea>
+      <button type="submit">Iniciar Atendimento</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 • José Victor de Paulo • Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
