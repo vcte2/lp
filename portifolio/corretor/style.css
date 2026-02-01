@@ -28,10 +28,17 @@ body {
 /* ================= NAVBAR ================= */
 .navbar {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: auto;
   background: rgba(248,248,252,0.95);
   backdrop-filter: blur(6px);
-  z-index: 10;
+  z-index: 100;
+}
+
+.navbar * {
+  pointer-events: auto;
 }
 
 .nav-flex {
@@ -185,6 +192,12 @@ body {
   color: #fff;
   padding: 120px 0;
   text-align: center;
+  position: relative;
+  z-index: 20;
+}
+
+.contato * {
+  pointer-events: auto;
 }
 
 .btn-whats {
@@ -195,6 +208,7 @@ body {
   border-radius: 30px;
   color: #020617;
   font-weight: 700;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -263,4 +277,26 @@ body {
   .contato {
     padding: 90px 0;
   }
+}
+
+/* ===============================
+   WHATSAPP FLUTUANTE
+================================ */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 62px;
+  height: 62px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1000;
+  animation: float 2.5s infinite;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  transition: transform .3s ease, box-shadow .3s ease;
 }

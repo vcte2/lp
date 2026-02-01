@@ -323,7 +323,7 @@ h1, h2, h3 {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1000px;
   margin: auto;
@@ -543,4 +543,26 @@ h1, h2, h3 {
   .sobre p {
     font-size: 0.95rem;
   }
+}
+
+/* ===============================
+   WHATSAPP FLUTUANTE
+================================ */
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 62px;
+  height: 62px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1000;
+  animation: float 2.5s infinite;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  transition: transform .3s ease, box-shadow .3s ease;
 }

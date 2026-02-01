@@ -9,10 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="https://wa.me/5511979852687" class="whatsapp" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <header class="navbar">
   <div class="container nav-flex">
@@ -109,7 +112,7 @@
     <form onsubmit="enviarWhatsApp(event)">
       <input type="text" id="nome" placeholder="Seu nome" required>
       <textarea id="mensagem" placeholder="Descreva brevemente seu caso" required></textarea>
-      <button type="submit">Iniciar Atendimento</button>
+      <button type="submit" target="_blank">Iniciar Atendimento</button>
     </form>
   </div>
 </section>

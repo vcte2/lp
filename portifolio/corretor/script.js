@@ -1,6 +1,9 @@
 function abrirWhatsApp() {
-    const texto = `Olá! Me chamo ${nome}. Tenho interesse em um site.\n\nMensagem: ${mensagem}`;
-    const telefone = '5511979852687'; // Substitua pelo número de telefone desejado com código do país
-  window.location.href =
-    `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+  const telefone = '5511979852687';
+  const texto = 'Olá! Tenho interesse em um site.';
+
+  window.open(
+    `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`,
+    '_blank'
+  );
 }

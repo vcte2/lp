@@ -9,10 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="https://wa.me/5511979852687" class="whatsapp" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <header class="navbar">
   <div class="container nav-flex">
@@ -62,7 +65,7 @@
     <div class="imoveis-grid">
 
       <div class="imovel-card">
-        <img src="https://images.unsplash.com/photo-1572120360610-d971b9b78825" alt="Casa alto padrão">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="Casa alto padrão">
         <div class="imovel-info">
           <h3>Casa Alto Padrão</h3>
           <p>3 quartos • 2 vagas • Área gourmet</p>
@@ -121,8 +124,10 @@
     <span class="section-tag light">CONTATO</span>
     <h2>Gostou de algum imóvel?</h2>
     <p>Fale agora com o corretor pelo WhatsApp.</p>
-
-    <a href="#" class="btn-whats" onclick="abrirWhatsApp()">Falar no WhatsApp</a>
+    
+    <button onclick="abrirWhatsApp()" class="btn-whats" >
+      Falar no WhatsApp
+    </button>
   </div>
 </section>
 
@@ -130,6 +135,6 @@
   <p>© 2026 • José Victor de Paulo • Todos os direitos reservados</p>
 </footer>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
