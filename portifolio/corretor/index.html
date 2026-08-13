@@ -2,13 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Corretor de Imóveis | Encontre seu próximo lar</title>
-  <meta name="description" content="Compra e venda de imóveis com atendimento personalizado. Veja imóveis disponíveis e fale direto pelo WhatsApp.">
+  <title>Corretor VCTE | Encontre seu próximo lar</title>
+  <meta name="description" content="Compra, venda e investimento imobiliário com atendimento personalizado. Simule seu financiamento e fale direto pelo WhatsApp.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,99 +21,148 @@
   <div class="container nav-flex">
     <div class="logo">Corretor<span>VCTE</span></div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#inicio">Início</a>
       <a href="#imoveis">Imóveis</a>
+      <a href="#simulador">Simulador</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato" class="nav-cta">Contato</a>
     </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <section class="hero" id="inicio">
   <div class="container hero-grid">
-    <div class="hero-text">
-      <span class="tag">IMÓVEIS SELECIONADOS</span>
+    <div class="hero-text reveal">
+      <span class="tag">// imóveis selecionados</span>
 
-      <h1>
-        Encontre o imóvel<br>
-        ideal para você<br>
-        com segurança
-      </h1>
+      <h1>Encontre o imóvel<br>ideal para você.</h1>
 
-      <p>
-        Atendimento personalizado para compra, venda
-        e investimento imobiliário.
-      </p>
+      <p>Atendimento personalizado para compra, venda e investimento imobiliário — com simulação de financiamento na hora.</p>
 
-      <a href="#imoveis" class="btn-primary">Ver imóveis disponíveis</a>
+      <div class="hero-actions">
+        <a href="#imoveis" class="btn-primary">Ver imóveis disponíveis</a>
+        <a href="#simulador" class="btn-ghost">Simular financiamento</a>
+      </div>
     </div>
 
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
-           alt="Casa moderna"
-           loading="lazy">
+    <div class="hero-image reveal">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80" alt="Casa moderna" loading="lazy">
     </div>
   </div>
 </section>
 
 <section class="imoveis" id="imoveis">
   <div class="container">
-    <span class="section-tag">CATÁLOGO</span>
+    <span class="section-tag">// catálogo</span>
     <h2>Imóveis em destaque</h2>
 
-    <div class="imoveis-grid">
+    <!-- FILTRO -->
+    <div class="filtros" role="tablist" aria-label="Filtrar imóveis">
+      <button class="filtro-btn is-active" data-filter="todos">Todos</button>
+      <button class="filtro-btn" data-filter="comprar">Comprar</button>
+      <button class="filtro-btn" data-filter="investir">Investir</button>
+      <button class="filtro-btn" data-filter="familia">Família</button>
+    </div>
 
-      <div class="imovel-card">
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="Casa alto padrão">
+    <div class="imoveis-grid">
+      <div class="imovel-card reveal" data-tags="comprar familia">
+        <div class="imovel-img">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=700&q=80" alt="Casa alto padrão" loading="lazy">
+          <span class="imovel-flag">Família</span>
+        </div>
         <div class="imovel-info">
           <h3>Casa Alto Padrão</h3>
           <p>3 quartos • 2 vagas • Área gourmet</p>
-          <span>R$ 980.000</span>
+          <span class="imovel-preco" data-price="980000">R$ 980.000</span>
+          <a class="imovel-simular" data-price="980000" href="#simulador">Simular financiamento →</a>
         </div>
       </div>
 
-      <div class="imovel-card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Apartamento moderno">
+      <div class="imovel-card reveal" data-tags="comprar investir">
+        <div class="imovel-img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Apartamento moderno" loading="lazy">
+          <span class="imovel-flag">Investir</span>
+        </div>
         <div class="imovel-info">
           <h3>Apartamento Moderno</h3>
           <p>2 quartos • Varanda • Lazer completo</p>
-          <span>R$ 640.000</span>
+          <span class="imovel-preco" data-price="640000">R$ 640.000</span>
+          <a class="imovel-simular" data-price="640000" href="#simulador">Simular financiamento →</a>
         </div>
       </div>
 
-      <div class="imovel-card">
-        <img src="https://images.unsplash.com/photo-1592595896616-c37162298647" alt="Casa térrea">
+      <div class="imovel-card reveal" data-tags="comprar familia">
+        <div class="imovel-img">
+          <img src="https://images.unsplash.com/photo-1592595896616-c37162298647?auto=format&fit=crop&w=700&q=80" alt="Casa térrea" loading="lazy">
+          <span class="imovel-flag">Família</span>
+        </div>
         <div class="imovel-info">
           <h3>Casa Térrea</h3>
           <p>2 quartos • Quintal • Bairro tranquilo</p>
-          <span>R$ 520.000</span>
+          <span class="imovel-preco" data-price="520000">R$ 520.000</span>
+          <a class="imovel-simular" data-price="520000" href="#simulador">Simular financiamento →</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
+<!-- SIMULADOR DE FINANCIAMENTO -->
+<section class="simulador" id="simulador">
+  <div class="container simulador-grid">
+    <div class="simulador-text reveal">
+      <span class="section-tag light">// simulador</span>
+      <h2>Quanto ficaria por mês?</h2>
+      <p>Ajuste o valor do imóvel, a entrada e o prazo — o cálculo é uma estimativa simplificada para você ter uma noção inicial.</p>
+      <p class="simulador-obs">*Simulação aproximada. Valores reais dependem de análise de crédito e da instituição financeira.</p>
+    </div>
+
+    <div class="simulador-card reveal">
+      <div class="campo">
+        <div class="campo-head"><label for="valorImovel">Valor do imóvel</label><span id="valorImovelOut">R$ 500.000</span></div>
+        <input type="range" id="valorImovel" min="150000" max="2000000" step="10000" value="500000">
+      </div>
+
+      <div class="campo">
+        <div class="campo-head"><label for="entrada">Entrada</label><span id="entradaOut">R$ 100.000 (20%)</span></div>
+        <input type="range" id="entrada" min="0" max="80" step="1" value="20">
+      </div>
+
+      <div class="campo">
+        <div class="campo-head"><label for="prazo">Prazo</label><span id="prazoOut">240 meses</span></div>
+        <input type="range" id="prazo" min="60" max="420" step="12" value="240">
+      </div>
+
+      <div class="resultado">
+        <span class="resultado-label">Parcela estimada</span>
+        <strong id="resultadoValor">R$ 0</strong>
+        <span class="resultado-mono" id="resultadoDetalhe">// financiado: R$ 0</span>
+      </div>
+
+      <a href="https://wa.me/5511979852687" target="_blank" class="btn-primary w100" id="simuladorCta">Falar sobre este imóvel</a>
     </div>
   </div>
 </section>
 
 <section class="sobre" id="sobre">
   <div class="container sobre-grid">
-    <div>
-      <span class="section-tag">ATENDIMENTO</span>
+    <div class="reveal">
+      <span class="section-tag">// atendimento</span>
       <h2>Experiência imobiliária completa</h2>
-
-      <p>
-        Atuação com transparência, foco no cliente
-        e acompanhamento em todas as etapas
-        da negociação.
-      </p>
+      <p>Atuação com transparência, foco no cliente e acompanhamento em todas as etapas da negociação.</p>
     </div>
 
-    <div class="sobre-box">
+    <div class="sobre-box reveal">
       <ul>
-        <li>✔ Atendimento personalizado</li>
-        <li>✔ Análise de documentação</li>
-        <li>✔ Suporte do início ao fim</li>
-        <li>✔ Segurança na negociação</li>
+        <li><i class="fa-solid fa-check"></i>Atendimento personalizado</li>
+        <li><i class="fa-solid fa-check"></i>Análise de documentação</li>
+        <li><i class="fa-solid fa-check"></i>Suporte do início ao fim</li>
+        <li><i class="fa-solid fa-check"></i>Segurança na negociação</li>
       </ul>
     </div>
   </div>
@@ -121,18 +170,15 @@
 
 <section class="contato" id="contato">
   <div class="container contato-box">
-    <span class="section-tag light">CONTATO</span>
+    <span class="section-tag">// contato</span>
     <h2>Gostou de algum imóvel?</h2>
     <p>Fale agora com o corretor pelo WhatsApp.</p>
-    
-    <button onclick="abrirWhatsApp()" class="btn-whats" >
-      Falar no WhatsApp
-    </button>
+    <a href="https://wa.me/5511979852687" target="_blank" class="btn-whats">Falar no WhatsApp</a>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 • José Victor de Paulo • Todos os direitos reservados</p>
+  <p>© <span id="year"></span> • José Victor de Paulo • Todos os direitos reservados</p>
 </footer>
 
 <script src="script.js"></script>

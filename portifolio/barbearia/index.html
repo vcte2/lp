@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Barbearia do Bigode | Clube de Sócios</title>
+  <meta name="description" content="Barbearia boutique com atendimento por hora marcada. Corte, barba e uma experiência que vale a assinatura." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- INTRO -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__content">
+      <span class="intro__mono">// iniciando protocolo</span>
+      <img src="images/logo.png" alt="Barbearia do Bigode" class="intro__logo" />
+      <p class="intro__tag">Tradição, Precisão & Bom Whisky</p>
+      <div class="intro__bar"><span></span></div>
+    </div>
+  </div>
+
+  <button class="float-wa js-open-booking" aria-label="Agendar no WhatsApp" data-service="">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#topo" aria-label="Barbearia do Bigode">
+        <img src="images/logo.png" alt="Barbearia do Bigode" class="brand__logo" />
+        <span class="brand__name">Bigode<em>Club</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#local">Local</a>
+        <a class="btn btn--primary" href="#agendar">Agendar</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <div class="hero__bg" style="background-image:url('images/hero.jpg')"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <div class="hero__text" data-animate="fade-up">
+          <span class="pill"><span class="pill__dot"></span> vagas limitadas por hora marcada</span>
+
+          <h1>Estilo é a única<br><em>linguagem</em> que todo mundo entende.</h1>
+
+          <p>
+            Corte de precisão, barba bem cuidada e um ambiente pensado pra quem
+            já não tem tempo a perder — mas ainda aprecia os detalhes.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary btn--glow" href="#agendar">Agendar agora</a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust"><strong>+500</strong><span>clientes atendidos</span></div>
+            <div class="trust"><strong>4.9</strong><span>avaliação média</span></div>
+            <div class="trust"><strong>2026</strong><span>desde</span></div>
+          </div>
+        </div>
+
+        <!-- CARTÃO DE SÓCIO -->
+        <div class="hero__card" data-animate="fade-left">
+          <div class="member-card">
+            <div class="member-card__top">
+              <span class="member-card__mono">SÓCIO Nº 001</span>
+              <span class="member-card__mono member-card__status"><span class="blink"></span> ativo</span>
+            </div>
+
+            <h3>Cartão do Clube</h3>
+            <p>Corte, barba ou os dois — escolha e finalize no WhatsApp.</p>
+
+            <div class="quick">
+              <a class="quick__item" href="#agendar"><span class="quick__num">01</span> Corte</a>
+              <a class="quick__item" href="#agendar"><span class="quick__num">02</span> Barba</a>
+              <a class="quick__item" href="#agendar"><span class="quick__num">03</span> Corte + Barba</a>
+            </div>
+
+            <a class="btn btn--primary w100" href="#agendar">Ver horários</a>
+
+            <div class="member-card__strip" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section__head" data-animate="fade-up">
+          <span class="tag">// serviços</span>
+          <h2>O essencial, feito com excelência</h2>
+          <p>Selecione o serviço ideal e vá direto pro agendamento.</p>
+        </div>
+
+        <div class="grid services">
+          <article class="card" data-animate="fade-up">
+            <span class="card__index">I</span>
+            <h3>Corte Premium</h3>
+            <p>Consultoria rápida + corte alinhado ao seu estilo.</p>
+            <div class="card__foot">
+              <span class="price">A partir de R$ 60</span>
+              <a class="link" href="#agendar">Agendar →</a>
+            </div>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="60">
+            <span class="card__index">II</span>
+            <h3>Barba Terapia</h3>
+            <p>Toalha quente, desenho preciso e finalização premium.</p>
+            <div class="card__foot">
+              <span class="price">A partir de R$ 45</span>
+              <a class="link" href="#agendar">Agendar →</a>
+            </div>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="120">
+            <h3>Corte + Barba</h3>
+            <span class="card__index">III</span>
+            <p>Pacote completo com acabamento impecável.</p>
+            <div class="card__foot">
+              <span class="price">A partir de R$ 95</span>
+              <a class="link" href="#agendar">Agendar →</a>
+            </div>
+          </article>
+
+          <article class="card" data-animate="fade-up" data-delay="180">
+            <span class="card__index">IV</span>
+            <h3>Sobrancelha</h3>
+            <p>Detalhes que elevam o visual. Sem exagero.</p>
+            <div class="card__foot">
+              <span class="price">A partir de R$ 25</span>
+              <a class="link" href="#agendar">Agendar →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container split">
+        <div class="split__text" data-animate="fade-up">
+          <span class="tag">// experiência</span>
+          <h2>Ritual. Conforto. <em>Resultado.</em></h2>
+          <p>
+            Atendimento com hora marcada pra você não perder tempo. Do primeiro
+            contato à finalização, tudo pensado pra você sair melhor do que chegou.
+          </p>
+
+          <ul class="bullets">
+            <li><i class="fa-solid fa-check"></i> Atendimento pontual e personalizado</li>
+            <li><i class="fa-solid fa-check"></i> Ambiente escuro, sofisticado e confortável</li>
+            <li><i class="fa-solid fa-check"></i> Produtos premium e técnicas atuais</li>
+          </ul>
+
+          <a class="btn btn--primary btn--glow" href="#agendar">Agendar minha experiência</a>
+        </div>
+
+        <div class="split__media" data-animate="fade-left">
+          <div class="media">
+            <img src="images/hero.jpg" alt="Interior da barbearia" loading="lazy">
+            <div class="media__badge">
+              <strong>Desde 2026</strong>
+              <span>Barbearia do Bigode</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <div class="container">
+        <div class="section__head" data-animate="fade-up">
+          <span class="tag">// galeria</span>
+          <h2>Estilo que fala por si</h2>
+          <p>Fotos reais do trabalho e do ambiente.</p>
+        </div>
+
+        <div class="gallery" data-animate="fade-up">
+          <a class="gallery__item" href="images/g1.jpg" target="_blank" rel="noreferrer">
+            <img src="images/g1.jpg" alt="Corte 1" loading="lazy">
+          </a>
+          <a class="gallery__item" href="images/g2.jpg" target="_blank" rel="noreferrer">
+            <img src="images/g2.jpg" alt="Corte 2" loading="lazy">
+          </a>
+          <a class="gallery__item" href="images/g3.jpg" target="_blank" rel="noreferrer">
+            <img src="images/g3.jpg" alt="Corte 3" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCAL -->
+    <section class="section section--alt" id="local">
+      <div class="container split">
+        <div class="split__text" data-animate="fade-up">
+          <span class="tag">// local</span>
+          <h2>Chegue, sente e relaxe</h2>
+          <p>Endereço, horários e referência. (Substitua pelos dados reais.)</p>
+
+          <div class="info">
+            <div class="info__row"><i class="fa-solid fa-location-dot"></i> Rua X, Nº Y - Bairro - Cidade</div>
+            <div class="info__row"><i class="fa-solid fa-clock"></i> Seg a Sáb: 09h às 20h</div>
+            <div class="info__row"><i class="fa-solid fa-phone"></i> (11) 9XXXX-XXXX</div>
+          </div>
+
+          <a class="btn btn--ghost" href="#agendar">Agendar horário</a>
+        </div>
+
+        <div class="split__media" data-animate="fade-left">
+          <div class="map" style="position: relative; width: 100%; height: 100%; min-height: 300px;">
+            <iframe 
+              src="https://www.google.com/maps?q=-23.320189826182318%2C+-46.58686079325418&amp;z=15&amp;t=m&amp;hl=en&amp;output=embed" 
+              style="border:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0;" 
+              allowfullscreen 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Google Map">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAR -->
+    <section class="cta" id="agendar">
+      <div class="container cta__inner" data-animate="fade-up">
+        <div>
+          <span class="tag tag--invert">// agendamento</span>
+          <h2>Pronto pra elevar seu estilo?</h2>
+          <p>Toque no botão e finalize o agendamento no WhatsApp.</p>
+        </div>
+
+        <div class="cta__actions">
+          <button class="btn btn--primary btn--glow js-open-booking" data-service="">
+            Agendar no WhatsApp
+          </button>
+          <small class="micro">Dica: já envie o serviço + horário desejado.</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: ESCOLHA DE BARBEIRO -->
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="booking-modal__overlay" data-close-modal></div>
+    <div class="booking-modal__panel" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+      <button class="booking-modal__close" data-close-modal aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="member-card__mono">// selecionar profissional</span>
+      <h3 id="bookingModalTitle">Com quem você quer cortar?</h3>
+      <p class="booking-modal__hint">Escolha o barbeiro. Você finaliza o horário direto no WhatsApp dele.</p>
+
+      <div class="barber-list">
+        <button class="barber-card" data-barber="Rafael \"Bigode\" Silva">
+          <span class="barber-card__avatar">RS</span>
+          <span class="barber-card__info">
+            <strong>Rafael "Bigode" Silva</strong>
+            <span class="barber-card__handle">@classico.rafael</span>
+            <span class="barber-card__tag">Clássico &amp; barba</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="barber-card" data-barber="Marcus Andrade">
+          <span class="barber-card__avatar">MA</span>
+          <span class="barber-card__info">
+            <strong>Marcus Andrade</strong>
+            <span class="barber-card__handle">@fade.marcus</span>
+            <span class="barber-card__tag">Fade &amp; design</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="barber-card" data-barber="Théo Martins">
+          <span class="barber-card__avatar">TM</span>
+          <span class="barber-card__info">
+            <strong>Théo Martins</strong>
+            <span class="barber-card__handle">@navalha.theo</span>
+            <span class="barber-card__tag">Navalha &amp; acabamento</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <small class="micro booking-modal__micro">Sem preferência? Qualquer um deles cuida bem de você.</small>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="images/logo.png" alt="Barbearia do Bigode" class="footer__logo" />
+      <p>© <span id="year"></span> Barbearia do Bigode — Todos os direitos reservados.</p>
+      <a class="top" href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

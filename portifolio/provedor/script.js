@@ -1,7 +1,6 @@
 /* SCROLL PROGRESS */
 const bar = document.createElement("div");
-bar.style.cssText =
-  "position:fixed;top:0;left:0;height:4px;width:0%;background:linear-gradient(90deg,#2563eb,#38bdf8);z-index:9999";
+bar.id = "scroll-progress";
 document.body.appendChild(bar);
 
 window.addEventListener("scroll", () => {
@@ -9,7 +8,27 @@ window.addEventListener("scroll", () => {
   bar.style.width = (window.scrollY / h) * 100 + "%";
 });
 
-/* REVEAL */
+/* MENU MOBILE */
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navMenu.classList.toggle("active");
+  menuToggle.setAttribute("aria-expanded", isOpen);
+});
+
+navMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
+/* ANO NO RODAPÉ */
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* REVEAL ON SCROLL */
 const revealItems = document.querySelectorAll(
   ".hero, .stats, .tech, .plans, .cta-advanced, .plan-card, .stat-card"
 );
@@ -19,6 +38,7 @@ const observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("reveal");
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -36,14 +56,12 @@ const plans = document.querySelectorAll(".plan-card");
 plans.forEach(plan => {
   plan.addEventListener("mouseenter", () => {
     plans.forEach(p => {
-      if (p !== plan) p.style.opacity = "0.5";
+      if (p !== plan) p.style.opacity = "0.55";
     });
-    plan.style.transform = "scale(1.05)";
   });
 
   plan.addEventListener("mouseleave", () => {
     plans.forEach(p => (p.style.opacity = "1"));
-    plan.style.transform = "";
   });
 });
 
@@ -53,7 +71,7 @@ document.querySelectorAll(".magnetic").forEach(btn => {
     const r = btn.getBoundingClientRect();
     const x = e.clientX - r.left - r.width / 2;
     const y = e.clientY - r.top - r.height / 2;
-    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+    btn.style.transform = `translate(${x * 0.12}px, ${y * 0.12}px)`;
   });
 
   btn.addEventListener("mouseleave", () => {

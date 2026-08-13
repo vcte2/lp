@@ -2,14 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Advocacia Especializada | Atendimento Jurídico Premium</title>
-  <meta name="description" content="Advocacia especializada com atuação estratégica, ética e atendimento premium. Fale diretamente com um advogado.">
+  <title>Advocacia VCTE | Atendimento Jurídico Estratégico</title>
+  <meta name="description" content="Advocacia especializada com atuação estratégica, ética e atendimento direto com o advogado responsável.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,37 +21,54 @@
   <div class="container nav-flex">
     <div class="logo">Advocacia<span>VCTE</span></div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#inicio">Início</a>
       <a href="#areas">Atuação</a>
+      <a href="#processo">Como funciona</a>
       <a href="#sobre">Sobre</a>
       <a href="#contato" class="nav-cta">Contato</a>
     </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
 <section class="hero" id="inicio">
   <div class="container hero-grid">
-    <div class="hero-text">
-      <span class="tag">ESCRITÓRIO DE ADVOCACIA</span>
+    <div class="hero-text reveal">
+      <span class="tag">// escritório de advocacia</span>
 
-      <h1>
-        Excelência jurídica<br>
-        com visão estratégica<br>
-        e atendimento premium
-      </h1>
+      <h1>Excelência jurídica<br>com visão estratégica.</h1>
 
       <p>
-        Atuamos com foco em soluções jurídicas eficazes,
-        linguagem clara e compromisso absoluto com nossos clientes.
+        Atuamos com foco em soluções jurídicas eficazes, linguagem clara
+        e compromisso absoluto com nossos clientes — do primeiro contato
+        à resolução do caso.
       </p>
 
-      <a href="#contato" class="btn-primary">Falar com Advogado</a>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">Falar com Advogado</a>
+        <a href="#processo" class="btn-ghost">Como funciona</a>
+      </div>
+
+      <!-- ASSINATURA ANIMADA -->
+      <div class="signature">
+        <svg viewBox="0 0 320 90" class="signature__svg" aria-hidden="true">
+          <path id="sigPath" d="M10,60 C 40,20 55,85 80,45 C 100,15 110,70 135,50 C 150,38 160,60 175,45 C 195,25 205,65 230,40 C 250,20 260,55 300,30" />
+        </svg>
+        <span class="signature__label">assinatura reconhecida em cada atendimento</span>
+      </div>
     </div>
 
-    <div class="hero-visual">
+    <div class="hero-visual reveal">
       <div class="portrait-frame">
         <img src="img.png" alt="Advogada especialista">
+        <div class="portrait-badge">
+          <strong>+8 anos</strong>
+          <span>de atuação</span>
+        </div>
       </div>
     </div>
   </div>
@@ -59,21 +76,24 @@
 
 <section class="areas" id="areas">
   <div class="container">
-    <span class="section-tag">ÁREAS DE ATUAÇÃO</span>
+    <span class="section-tag">// áreas de atuação</span>
     <h2>Soluções jurídicas sob medida</h2>
 
     <div class="areas-grid">
-      <div class="area-card">
+      <div class="area-card reveal">
+        <span class="area-index">01</span>
         <h3>Direito Civil</h3>
         <p>Contratos, indenizações e responsabilidade civil.</p>
       </div>
 
-      <div class="area-card">
+      <div class="area-card reveal">
+        <span class="area-index">02</span>
         <h3>Direito Trabalhista</h3>
         <p>Assessoria preventiva e atuação estratégica.</p>
       </div>
 
-      <div class="area-card">
+      <div class="area-card reveal">
+        <span class="area-index">03</span>
         <h3>Direito Previdenciário</h3>
         <p>Planejamento e benefícios previdenciários.</p>
       </div>
@@ -81,44 +101,75 @@
   </div>
 </section>
 
+<!-- LINHA DO TEMPO DO ATENDIMENTO -->
+<section class="processo" id="processo">
+  <div class="container">
+    <span class="section-tag">// como funciona</span>
+    <h2>Do primeiro contato à solução</h2>
+    <p class="processo-desc">Transparência em cada etapa — você acompanha tudo.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">1</div>
+        <h3>Contato inicial</h3>
+        <p>Você descreve seu caso pelo WhatsApp, sem burocracia.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">2</div>
+        <h3>Análise do caso</h3>
+        <p>Avaliação técnica e definição da melhor estratégia jurídica.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">3</div>
+        <h3>Plano de ação</h3>
+        <p>Você recebe um panorama claro de prazos e próximos passos.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">4</div>
+        <h3>Acompanhamento</h3>
+        <p>Atualizações periódicas até a resolução do seu caso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sobre" id="sobre">
   <div class="container sobre-grid">
-    <div class="sobre-text">
-      <span class="section-tag">NOSSA ATUAÇÃO</span>
+    <div class="sobre-text reveal">
+      <span class="section-tag">// nossa atuação</span>
       <h2>Atendimento humano, técnico e transparente</h2>
 
       <p>
-        Nosso compromisso é oferecer orientação jurídica clara,
-        estratégica e responsável, sempre alinhada aos objetivos
-        e necessidades de cada cliente.
+        Nosso compromisso é oferecer orientação jurídica clara, estratégica
+        e responsável, sempre alinhada aos objetivos e necessidades de cada cliente.
       </p>
     </div>
 
     <div class="sobre-cards">
-      <div class="sobre-card">✔ Atendimento personalizado</div>
-      <div class="sobre-card">✔ Linguagem acessível</div>
-      <div class="sobre-card">✔ Ética e sigilo absoluto</div>
-      <div class="sobre-card">✔ Agilidade e compromisso</div>
+      <div class="sobre-card reveal"><i class="fa-solid fa-user-check"></i>Atendimento personalizado</div>
+      <div class="sobre-card reveal"><i class="fa-solid fa-comments"></i>Linguagem acessível</div>
+      <div class="sobre-card reveal"><i class="fa-solid fa-lock"></i>Ética e sigilo absoluto</div>
+      <div class="sobre-card reveal"><i class="fa-solid fa-bolt"></i>Agilidade e compromisso</div>
     </div>
   </div>
 </section>
 
 <section class="contato" id="contato">
   <div class="container contato-box">
-    <span class="section-tag light">CONTATO</span>
+    <span class="section-tag light">// contato</span>
     <h2>Precisa de orientação jurídica?</h2>
     <p>Fale agora diretamente com um advogado pelo WhatsApp.</p>
 
     <form onsubmit="enviarWhatsApp(event)">
       <input type="text" id="nome" placeholder="Seu nome" required>
       <textarea id="mensagem" placeholder="Descreva brevemente seu caso" required></textarea>
-      <button type="submit" target="_blank">Iniciar Atendimento</button>
+      <button type="submit">Iniciar Atendimento</button>
     </form>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 • José Victor de Paulo • Todos os direitos reservados</p>
+  <p>© <span id="year"></span> • José Victor de Paulo • Todos os direitos reservados</p>
 </footer>
 
 <script src="script.js" defer></script>

@@ -2,12 +2,15 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>VCTEFibra • Internet Fibra Óptica</title>
+  <title>VCTE Fibra • Internet Fibra Óptica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Internet fibra óptica de alta performance: baixa latência, Wi-Fi 6 e suporte local. Planos a partir de R$ 99,90/mês.">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,13 +20,16 @@
 
 <header class="header">
   <div class="container header-content">
-    <h1 class="logo">VCTE 🚀<span>Fibra</span></h1>
-    <nav>
+    <span class="logo">VCTE<span>Fibra</span></span>
+    <nav id="navMenu">
       <a href="#inicio">Início</a>
       <a href="#planos">Planos</a>
       <a href="#tecnologia">Tecnologia</a>
       <a href="#contato" class="cta-small">WhatsApp</a>
     </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -31,15 +37,9 @@
 <section class="hero" id="inicio">
   <div class="container hero-grid">
     <div class="hero-text">
-      <span class="eyebrow">INTERNET FIBRA ÓPTICA</span>
-      <h2>
-        Internet feita para<br>
-        <strong>quem exige performance</strong>
-      </h2>
-      <p>
-        Velocidade real, baixa latência e estabilidade
-        para streaming, jogos e trabalho remoto.
-      </p>
+      <span class="eyebrow">// internet fibra óptica</span>
+      <h2>Internet feita para<br><strong>quem exige performance</strong></h2>
+      <p>Velocidade real, baixa latência e estabilidade para streaming, jogos e trabalho remoto.</p>
 
       <div class="hero-actions">
         <a href="#planos" class="btn-primary magnetic">Ver planos</a>
@@ -48,8 +48,9 @@
     </div>
 
     <div class="hero-visual">
-      <div class="glow"></div>
-      <img src="robo.png" alt="Fibra óptica">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <img src="robo.png" alt="Assistente de rede VCTE Fibra">
     </div>
   </div>
 </section>
@@ -57,49 +58,43 @@
 <!-- STATS -->
 <section class="stats">
   <div class="container stats-grid">
-
     <div class="stat-card">
-      <div class="icon">📶</div>
+      <div class="icon"><i class="fa-solid fa-signal"></i></div>
       <h3>99.9%</h3>
       <p>Disponibilidade garantida</p>
     </div>
-
     <div class="stat-card">
-      <div class="icon">📡</div>
+      <div class="icon"><i class="fa-solid fa-wifi"></i></div>
       <h3>Wi-Fi 6</h3>
       <p>Tecnologia atual</p>
     </div>
-
     <div class="stat-card">
-      <div class="icon">🎧</div>
+      <div class="icon"><i class="fa-solid fa-headset"></i></div>
       <h3>Suporte</h3>
       <p>Humano e local</p>
     </div>
-
     <div class="stat-card">
-      <div class="icon">⚡</div>
+      <div class="icon"><i class="fa-solid fa-bolt"></i></div>
       <h3>Baixa latência</h3>
       <p>Ideal para gamers</p>
     </div>
-
   </div>
 </section>
 
 <!-- TECNOLOGIA -->
 <section class="tech" id="tecnologia">
   <div class="container">
-    <h2 class="section-title">Detalhes Técnicos</h2>
-    <p class="section-subtitle">
-      Para quem valoriza a tecnologia por trás da conexão
-    </p>
+    <span class="eyebrow eyebrow-dark">// infraestrutura</span>
+    <h2 class="section-title">Detalhes técnicos</h2>
+    <p class="section-subtitle">Para quem valoriza a tecnologia por trás da conexão.</p>
 
     <div class="tech-grid">
-      <div class="tech-card">⚡<h4>Baixa Latência</h4><p>Streaming e jogos sem lag</p></div>
-      <div class="tech-card">⬆️<h4>Upload Alto</h4><p>Ideal para home office</p></div>
-      <div class="tech-card">📡<h4>Fibra Dedicada</h4><p>Conexão direta até sua casa</p></div>
-      <div class="tech-card">🛡️<h4>Roteadores Premium</h4><p>Equipamentos inclusos</p></div>
-      <div class="tech-card">🔗<h4>Backbone Próprio</h4><p>Mais estabilidade</p></div>
-      <div class="tech-card">♾️<h4>Sem Franquia</h4><p>Internet ilimitada</p></div>
+      <div class="tech-card"><i class="fa-solid fa-bolt"></i><h4>Baixa latência</h4><p>Streaming e jogos sem lag</p></div>
+      <div class="tech-card"><i class="fa-solid fa-arrow-up-from-bracket"></i><h4>Upload alto</h4><p>Ideal para home office</p></div>
+      <div class="tech-card"><i class="fa-solid fa-satellite-dish"></i><h4>Fibra dedicada</h4><p>Conexão direta até sua casa</p></div>
+      <div class="tech-card"><i class="fa-solid fa-router"></i><h4>Roteadores premium</h4><p>Equipamentos inclusos</p></div>
+      <div class="tech-card"><i class="fa-solid fa-diagram-project"></i><h4>Backbone próprio</h4><p>Mais estabilidade</p></div>
+      <div class="tech-card"><i class="fa-solid fa-infinity"></i><h4>Sem franquia</h4><p>Internet ilimitada</p></div>
     </div>
   </div>
 </section>
@@ -107,6 +102,7 @@
 <!-- PLANOS -->
 <section class="plans" id="planos">
   <div class="container">
+    <span class="eyebrow">// planos</span>
     <h2 class="section-title">Escolha seu plano</h2>
 
     <div class="plans-grid">
@@ -115,11 +111,11 @@
         <p class="subtitle">Uso diário</p>
         <p class="price">R$ 99,90<span>/mês</span></p>
         <ul>
-          <li>Wi-Fi incluso</li>
-          <li>Instalação rápida</li>
-          <li>Sem limite</li>
+          <li><i class="fa-solid fa-check"></i>Wi-Fi incluso</li>
+          <li><i class="fa-solid fa-check"></i>Instalação rápida</li>
+          <li><i class="fa-solid fa-check"></i>Sem limite</li>
         </ul>
-        <button class="magnetic">Contratar</button>
+        <a href="https://wa.me/5511979852687" target="_blank" class="magnetic">Contratar</a>
       </div>
 
       <div class="plan-card featured">
@@ -128,11 +124,11 @@
         <p class="subtitle">Casa conectada</p>
         <p class="price">R$ 129,90<span>/mês</span></p>
         <ul>
-          <li>Wi-Fi 6</li>
-          <li>Ideal para família</li>
-          <li>Baixa latência</li>
+          <li><i class="fa-solid fa-check"></i>Wi-Fi 6</li>
+          <li><i class="fa-solid fa-check"></i>Ideal para família</li>
+          <li><i class="fa-solid fa-check"></i>Baixa latência</li>
         </ul>
-        <button class="magnetic">Contratar</button>
+        <a href="https://wa.me/5511979852687" target="_blank" class="magnetic">Contratar</a>
       </div>
 
       <div class="plan-card">
@@ -140,82 +136,55 @@
         <p class="subtitle">Performance máxima</p>
         <p class="price">R$ 159,90<span>/mês</span></p>
         <ul>
-          <li>Upload alto</li>
-          <li>Home office / Gamer</li>
-          <li>Máxima estabilidade</li>
+          <li><i class="fa-solid fa-check"></i>Upload alto</li>
+          <li><i class="fa-solid fa-check"></i>Home office / Gamer</li>
+          <li><i class="fa-solid fa-check"></i>Máxima estabilidade</li>
         </ul>
-        <button class="magnetic">Contratar</button>
+        <a href="https://wa.me/5511979852687" target="_blank" class="magnetic">Contratar</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA + FAQ -->
 <section class="cta-advanced" id="contato">
   <div class="container cta-grid">
-
     <div class="cta-content">
+      <span class="eyebrow">// fale com a gente</span>
       <h2>Chega de internet instável</h2>
-      <p>
-        Nossa infraestrutura foi pensada para quem
-        não aceita lentidão nem quedas.
-      </p>
-      <a href="https://wa.me/5511979852687" target="_blank" class="btn-primary magnetic">
-        Falar no WhatsApp
-      </a>
+      <p>Nossa infraestrutura foi pensada para quem não aceita lentidão nem quedas.</p>
+      <a href="https://wa.me/5511979852687" target="_blank" class="btn-primary magnetic">Falar no WhatsApp</a>
     </div>
 
     <div class="cta-faq">
-        <h4>Perguntas frequentes</h4>
-
-        <div class="faq-accordion">
-        
-          <details open>
-            <summary>A VCTE🚀Fibra atende minha região?</summary>
-            <p>
-              Estamos expandindo sempre! É só chamar no WhatsApp e informar seu endereço
-              que verificamos a cobertura rapidinho.
-            </p>
-          </details>
-        
-          <details>
-            <summary>Como é feita a instalação?</summary>
-            <p>
-              A instalação é realizada por técnicos especializados, com fibra óptica
-              direto até sua residência e equipamentos inclusos.
-            </p>
-          </details>
-        
-          <details>
-            <summary>A instalação é rápida?</summary>
-            <p>
-              Sim! Após a contratação, a instalação ocorre em até 48 horas,
-              conforme disponibilidade técnica.
-            </p>
-          </details>
-        
-          <details>
-            <summary>Posso usar a internet em quantos dispositivos?</summary>
-            <p>
-              Quantos quiser! Nossa internet não possui limite de dispositivos conectados,
-              mantendo estabilidade e performance.
-            </p>
-          </details>
-        
-        </div>
+      <h4>Perguntas frequentes</h4>
+      <div class="faq-accordion">
+        <details open>
+          <summary>A VCTE Fibra atende minha região?</summary>
+          <p>Estamos expandindo sempre! É só chamar no WhatsApp e informar seu endereço que verificamos a cobertura rapidinho.</p>
+        </details>
+        <details>
+          <summary>Como é feita a instalação?</summary>
+          <p>A instalação é realizada por técnicos especializados, com fibra óptica direto até sua residência e equipamentos inclusos.</p>
+        </details>
+        <details>
+          <summary>A instalação é rápida?</summary>
+          <p>Sim! Após a contratação, a instalação ocorre em até 48 horas, conforme disponibilidade técnica.</p>
+        </details>
+        <details>
+          <summary>Posso usar a internet em quantos dispositivos?</summary>
+          <p>Quantos quiser! Nossa internet não possui limite de dispositivos conectados, mantendo estabilidade e performance.</p>
+        </details>
       </div>
-
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-      <div class="container footer-content">
-        <p>
-          © <span id="year"></span> José Victor de Paulo.  
-          Todos os direitos reservados.
-        </p>
-      </div>
-    </footer>
+  <div class="container footer-content">
+    <p>© <span id="year"></span> José Victor de Paulo. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
