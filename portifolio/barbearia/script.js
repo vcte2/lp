@@ -43,7 +43,7 @@ if (intro) {
 }
 
 // ===== MODAL: ESCOLHA DE BARBEIRO =====
-const WHATSAPP_NUMERO = '5500000000000';
+const WHATSAPP_NUMERO = '5511979852687';
 const bookingModal = document.getElementById('bookingModal');
 let lastFocusedEl = null;
 
