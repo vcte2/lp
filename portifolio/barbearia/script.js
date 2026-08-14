@@ -80,6 +80,13 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+document.querySelectorAll('.gallery').forEach(elemento => {
+  elemento.addEventListener('click', function(evento) {
+    evento.preventDefault(); // Cancela a ação padrão (como abrir links)
+    evento.stopPropagation(); // Bloqueia a propagação do clique para outros elementos
+  });
+});
+
 bookingModal.querySelectorAll('.barber-card').forEach(card => {
   card.addEventListener('click', () => {
     const barbeiro = card.dataset.barber;
