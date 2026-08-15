@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Floricultura Flor & Cia | Flores e Buquês</title>
+  <meta name="description" content="Buquês e arranjos florais para todas as ocasiões. Monte seu buquê do seu jeito e peça direto no WhatsApp, com entrega no mesmo dia.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="https://wa.me/5511979852687" class="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <div class="logo">Flor<span>&Cia</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#montar">Monte seu buquê</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato" class="nav-cta">Pedir agora</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <span class="tag">// flores frescas todos os dias</span>
+      <h1>Flores que dizem<br><em>o que as palavras</em><br>não alcançam.</h1>
+      <p>Buquês, arranjos e cestas para presentear, comemorar ou simplesmente alegrar o dia de alguém — com entrega no mesmo dia.</p>
+
+      <div class="hero-actions">
+        <a href="#montar" class="btn-primary">Monte seu buquê</a>
+        <a href="#catalogo" class="btn-ghost">Ver catálogo</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Buquê de flores rosa e vermelho" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="section" id="catalogo">
+  <span class="tag tag-center">// catálogo</span>
+  <h2>Nossos favoritos</h2>
+  <p class="section-desc">Uma seleção do que mais sai da loja — todos disponíveis para entrega hoje.</p>
+
+  <div class="filtros" role="tablist" aria-label="Filtrar catálogo">
+    <button class="filtro-btn is-active" data-filter="todos">Todos</button>
+    <button class="filtro-btn" data-filter="buque">Buquês</button>
+    <button class="filtro-btn" data-filter="arranjo">Arranjos</button>
+    <button class="filtro-btn" data-filter="ocasiao">Ocasiões especiais</button>
+  </div>
+
+  <div class="catalogo-grid">
+    <div class="flor-card reveal" data-tags="buque">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Buquê de rosas vermelhas" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Buquê Paixão</h3>
+        <p>12 rosas vermelhas com folhagem e embalagem premium</p>
+        <span class="flor-preco">R$ 129,90</span>
+      </div>
+    </div>
+
+    <div class="flor-card reveal" data-tags="buque ocasiao">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=600&q=80" alt="Buquê de flores rosa claro" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Buquê Suave</h3>
+        <p>Astromélias e flores do campo em tons rosa claro</p>
+        <span class="flor-preco">R$ 94,90</span>
+      </div>
+    </div>
+
+    <div class="flor-card reveal" data-tags="arranjo">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1523694576729-6ec9d4c88f36?auto=format&fit=crop&w=600&q=80" alt="Arranjo de flores em vaso" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Arranjo Jardim</h3>
+        <p>Mix de flores coloridas em vaso de cerâmica</p>
+        <span class="flor-preco">R$ 149,90</span>
+      </div>
+    </div>
+
+    <div class="flor-card reveal" data-tags="ocasiao buque">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1561128290-006dc4827214?auto=format&fit=crop&w=600&q=80" alt="Buquê de girassóis" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Buquê Girassol</h3>
+        <p>Girassóis frescos, ideal para alegrar qualquer ambiente</p>
+        <span class="flor-preco">R$ 84,90</span>
+      </div>
+    </div>
+
+    <div class="flor-card reveal" data-tags="arranjo ocasiao">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=600&q=80" alt="Cesta de flores" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Cesta Encanto</h3>
+        <p>Cesta com flores nobres e folhagens selecionadas</p>
+        <span class="flor-preco">R$ 179,90</span>
+      </div>
+    </div>
+
+    <div class="flor-card reveal" data-tags="buque">
+      <div class="flor-img"><img src="https://images.unsplash.com/photo-1502977249166-824b3a8a4b3f?auto=format&fit=crop&w=600&q=80" alt="Buquê de flores do campo" loading="lazy"></div>
+      <div class="flor-info">
+        <h3>Buquê Campestre</h3>
+        <p>Flores do campo silvestres, estilo rústico e delicado</p>
+        <span class="flor-preco">R$ 74,90</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MONTE SEU BUQUÊ -->
+<section class="montar" id="montar">
+  <div class="montar-head reveal">
+    <span class="tag tag-invert">// monte o seu</span>
+    <h2>Seu buquê, do seu jeito</h2>
+    <p>Escolha o tamanho, a flor principal e a embalagem — o preço atualiza na hora.</p>
+  </div>
+
+  <div class="montar-grid reveal">
+    <div class="montar-card">
+      <h3>1. Tamanho</h3>
+      <div class="opcoes" data-group="tamanho">
+        <button class="opcao is-active" data-value="pequeno" data-price="59.90">Pequeno <span>R$ 59,90</span></button>
+        <button class="opcao" data-value="medio" data-price="94.90">Médio <span>R$ 94,90</span></button>
+        <button class="opcao" data-value="grande" data-price="139.90">Grande <span>R$ 139,90</span></button>
+      </div>
+
+      <h3>2. Flor principal</h3>
+      <div class="opcoes" data-group="flor">
+        <button class="opcao is-active" data-value="rosas" data-price="0">Rosas <span>Incluso</span></button>
+        <button class="opcao" data-value="girassois" data-price="10">Girassóis <span>+R$ 10,00</span></button>
+        <button class="opcao" data-value="mix" data-price="15">Mix colorido <span>+R$ 15,00</span></button>
+      </div>
+
+      <h3>3. Embalagem</h3>
+      <div class="opcoes" data-group="embalagem">
+        <button class="opcao is-active" data-value="kraft" data-price="0">Papel Kraft <span>Incluso</span></button>
+        <button class="opcao" data-value="rosa" data-price="8">Papel Rosa <span>+R$ 8,00</span></button>
+        <button class="opcao" data-value="caixa" data-price="18">Caixa Especial <span>+R$ 18,00</span></button>
+      </div>
+    </div>
+
+    <div class="montar-resumo">
+      <h4>Seu buquê</h4>
+      <ul id="resumoLista" class="resumo-lista"></ul>
+      <div class="resumo-total">
+        <span>Total</span>
+        <strong id="resumoTotal">R$ 59,90</strong>
+      </div>
+      <a href="#" target="_blank" rel="noopener" id="montarCta" class="btn-primary w100">Pedir no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section" id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-media reveal">
+      <img src="https://images.unsplash.com/photo-1518895312237-a9e23508077d?auto=format&fit=crop&w=700&q=80" alt="Interior da floricultura" loading="lazy">
+    </div>
+
+    <div class="sobre-text reveal">
+      <span class="tag">// sobre nós</span>
+      <h2>Cuidado em cada pétala</h2>
+      <p>Trabalhamos com fornecedores selecionados para garantir flores sempre frescas. Cada buquê é montado na hora, pensado pra durar e encantar.</p>
+
+      <ul class="bullets">
+        <li><i class="fa-solid fa-check"></i> Flores frescas selecionadas diariamente</li>
+        <li><i class="fa-solid fa-check"></i> Entrega no mesmo dia</li>
+        <li><i class="fa-solid fa-check"></i> Atendimento personalizado</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="cta" id="contato">
+  <div class="container cta-inner reveal">
+    <span class="tag tag-invert">// pedidos</span>
+    <h2>Vamos deixar seu dia mais florido?</h2>
+    <p>Fale agora e receba seu buquê ainda hoje.</p>
+    <a href="https://wa.me/5511979852687" target="_blank" rel="noopener" class="btn-primary">Pedir no WhatsApp</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> • Floricultura Flor & Cia • Todos os direitos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
